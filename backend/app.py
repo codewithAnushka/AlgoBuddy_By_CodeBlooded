@@ -15,7 +15,6 @@ load_dotenv()
 
 app = Flask(__name__)
 
-print("GEMINI KEY:", os.getenv("GEMINI_API_KEY"))
 
 # Proper CORS for local/dev and hosted frontend
 CORS(app, resources={r"/*": {"origins": "*"}})
