@@ -10,9 +10,11 @@ from flask_cors import CORS
 
 from chat_api import chat_bp
 
+
 load_dotenv()
 
 app = Flask(__name__)
+
 
 # Proper CORS for local/dev and hosted frontend
 CORS(app, resources={r"/*": {"origins": "*"}})
